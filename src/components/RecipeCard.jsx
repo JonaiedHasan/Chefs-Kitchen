@@ -9,7 +9,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const RecipeCard = ({dish}) => {
     const { name, ingredients, cooking_method, rating } = dish;
-  console.log(name)
     const [added, setAdded] = useState(false);
     const handleFavorite = () => {
         setAdded(true)
@@ -53,23 +52,3 @@ export default RecipeCard;
 
 
 
-
-
-
-
-
-// import React, { useState } from "react";
-// 
-
-
-
-// const RecipeCard = ({ dish }) => {
-
-//     return (
-//         <div>
-
-//         </div>
-//     );
-// };
-
-// export default RecipeCard;
