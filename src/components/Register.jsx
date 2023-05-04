@@ -6,7 +6,6 @@ import { AuthContext } from "./AuthProvider";
 
 const Register = () => {
   const { registerUser, updateUserDetails } = useContext(AuthContext);
-
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
@@ -24,11 +23,10 @@ const Register = () => {
     if ((email, password)) {
       registerUser(email, password)
         .then((result) => {
-          console.log(result.user);
           updateUserDetails(result.user,name,photo)
         })
         .catch((err) => {
-          console.log(err.message);
+          setError(err.message);
         });
     }
   };
@@ -61,7 +59,6 @@ const Register = () => {
             placeholder="Password"
             className="input input-bordered input-primary w-full max-w-xs mb-6"
           />
-          <p className="error">{error}</p>
         </div>
         <div>
           <input
@@ -72,6 +69,8 @@ const Register = () => {
           />
         </div>
       </div>
+      <p className="error">{error}</p>
+
       <p className="mb-2">
         Already have an account?{" "}
         <Link

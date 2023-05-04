@@ -11,7 +11,7 @@ const Login = () => {
   const auth = getAuth(app);
   const { handleGoogleSignIn, handleGitHubSignIn, signIn } =
     useContext(AuthContext);
-
+    const [error,seterror] = useState()
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -24,16 +24,14 @@ const Login = () => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
 
     signIn(email, password)
       .then((result) => {
-        console.log(result.user);
         form.reset();
         navigate(from, { replace: true });
       })
       .catch((err) => {
-        console.log(err.message);
+        seterror(err.message);
       });
   };
 
@@ -46,7 +44,7 @@ const Login = () => {
     sendPasswordResetEmail(auth, email)
       .then(() => {})
       .catch((err) => {
-        console.log(err.message);
+        seterror(err.message);
       });
   };
 
@@ -94,10 +92,10 @@ const Login = () => {
             className="input input-bordered input-primary w-full max-w-xs"
           />
         </div>
-
+         <p className="error">{error}</p>
         <p className="mt-4 cursor-pointer hover:underline decoration-1">
           <button
-            className="btn bg-orange-100 rounded-3xl"
+            className="btn bg-orange-100  rounded-3xl"
             onClick={() => setShowPassword(!showPassword)}
           >
             {!showPassword ? "Show Password" : "Hide password"}
