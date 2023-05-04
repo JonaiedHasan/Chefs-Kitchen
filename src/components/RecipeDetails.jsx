@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useLoaderData } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
+import LazyLoad from "react-lazy-load";
 import { TbHeartFilled } from "react-icons/tb";
 import RecipeCard from './RecipeCard';
 
@@ -43,13 +44,13 @@ console.log(recipe)
                     </div>
                 </div>
             </div>
-            {/* <LazyLoad> */}
+            <LazyLoad>
                 <div className="my-container grid sm:grid-cols-1 md:grid-cols-2  gap-6 justify-center items-center">
                     {recipe.map((dish) => (
                         <RecipeCard key={dish.name} dish={dish} />
                     ))}
                 </div>
-            {/* </LazyLoad> */}
+            </LazyLoad>
         </div>
     );
 };
