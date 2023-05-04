@@ -70,10 +70,10 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link to="/" className="btn btn-ghost normal-case text-xl">
+          <Link to="/" className="btn btn-ghost normal-case text-2xl">
             {" "}
-            <TbChefHat className="mx-4" />
-            Chef`s Kitchen{" "}
+            <TbChefHat className="mx-4 " />
+            <p className="text-color">Chef`s Kitchen</p> {" "}
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
