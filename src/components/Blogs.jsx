@@ -23,7 +23,20 @@ const Blogs = () => {
                     <p>React provides a built-in library called PropTypes that allows developers to validate the props being passed to a component. PropTypes provides a way to check the type, presence, and shape of the props being passed. To use PropTypes, we need to import the library and specify the propTypes object on the component. The propTypes object should contain a key for each prop that we want to validate and the value of that key specifies the validation rule. If the validation rule fails, a warning will be logged to the console. Using PropTypes can help catch bugs early and make the code more maintainable.</p>
                 </div>
             </div>
-          
+            <div className="collapse my-4">
+                <input type="checkbox" className="peer" />
+                <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    3.Tell us the difference between nodejs and express js.
+                </div>
+                <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <p>Node.js is a JavaScript runtime environment that allows developers to run JavaScript code outside of a web browser. It is designed to be used for building scalable network applications.
+
+                        Express.js is a web application framework built on top of Node.js. It provides a simple and flexible way to create web applications and APIs by providing features such as routing, middleware, and templates.
+
+                        In other words, Node.js is the runtime environment for JavaScript code to run on the server-side, while Express.js is a framework built on top of Node.js to simplify building web applications and APIs.</p>
+                </div>
+            </div>
+           
 
         </div>
     );
