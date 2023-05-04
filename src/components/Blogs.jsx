@@ -36,7 +36,17 @@ const Blogs = () => {
                         In other words, Node.js is the runtime environment for JavaScript code to run on the server-side, while Express.js is a framework built on top of Node.js to simplify building web applications and APIs.</p>
                 </div>
             </div>
-           
+            <div className="collapse my-4">
+                <input type="checkbox" className="peer" />
+                <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    4.What is a custom hook, and why will you create a custom hook?
+                </div>
+                <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <p>In React, a custom hook is a JavaScript function that starts with the prefix use and allows you to extract logic from a component and share it across multiple components. Its a way to reuse stateful logic and share functionality between components without the need for higher-order components or render props.
+
+                        Custom hooks can be used to encapsulate complex logic and improve code organization. For example, you can create a custom hook to handle form validation, API calls, or even to manage the state of a component. By creating a custom hook, you can easily share the functionality across multiple components and avoid duplication of code.</p>
+                </div>
+            </div>
 
         </div>
     );
