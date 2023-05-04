@@ -8,7 +8,7 @@ const Header = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
     logOut()
-      .then(() => {})
+      .then(() => { })
       .catch((err) => {
         console.log(err.message);
       });
@@ -73,7 +73,7 @@ const Header = () => {
           <Link to="/" className="btn btn-ghost normal-case text-xl">
             {" "}
             <TbChefHat className="mx-4" />
-            Kitchen Dairies{" "}
+            Chef`s Kitchen{" "}
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
