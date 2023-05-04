@@ -59,7 +59,7 @@ const Login = () => {
       <div className="flex justify-center items- gap-8 mt-4 mb-2">
         <div>
           <button
-            className="text-4xl p-2 bg-slate-800 rounded-full"
+            className="text-4xl p-2 bg-slate-100 rounded-full"
             onClick={handleGoogleSignIn}
           >
             {" "}
@@ -68,7 +68,7 @@ const Login = () => {
         </div>
         <div>
           <button
-            className="text-4xl p-2 bg-slate-800 rounded-full"
+            className="text-4xl p-2 bg-slate-100 rounded-full"
             onClick={handleGitHubSignIn}
           >
             <TbBrandGithub />
@@ -97,7 +97,7 @@ const Login = () => {
 
         <p className="mt-4 cursor-pointer hover:underline decoration-1">
           <button
-            className="btn rounded-3xl"
+            className="btn bg-orange-100 rounded-3xl"
             onClick={() => setShowPassword(!showPassword)}
           >
             {!showPassword ? "Show Password" : "Hide password"}

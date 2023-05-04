@@ -8,7 +8,7 @@ const Sections = () => {
       <p className="text-center text-color text-5xl font-semibold mt-24 mb-4">
        Most Popular Recipes
       </p>
-      <p className="text-center text-indigo-200 text-xl mb-12">
+      <p className="text-center text-slate-700 text-xl mb-12">
       A Journey Through Our Chef`s Recipes
       </p>
       <div className="carousel w-full rounded-2xl">

@@ -6,7 +6,7 @@ import Lottie from "lottie-react";
 const Banner = () => {
   return (
     <div>
-      <div className="flex sm:flex-col md:flex-row justify-around items-center my-container">
+      <div className=" md:flex justify-around items-center my-container">
         <div className="">
           <img src="https://img.freepik.com/premium-photo/professional-chef-prepares-vegetables-frying-pan-cooking-healthy-vegetarian-food-meal_192985-2249.jpg?w=900" alt="" />
           {/* <Lottie animationData={Cook} /> */}
@@ -16,7 +16,7 @@ const Banner = () => {
           Chef`s <br />
             <span className="mx-16">Kitchen</span> <br />
           </h2>
-          <p className="text-2xl font-semibold text-slate-200 mt-12 mb-12">
+          <p className="text-2xl font-semibold text-slate-600 mt-12 mb-12">
           Discover the World`s Most Delicious Destinations
           </p>
           <button className="btn-primary">Learn More</button>
